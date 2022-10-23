@@ -1,8 +1,14 @@
 import React from 'react'
+import CompanyHeors from '../components/CompanyHeors'
+import LIstHeros from '../components/LIstHeros'
+import { useSelector} from 'react-redux'
 
 function ChooseHero() {
+  const  Companyname = useSelector((state) => state.companyName.name);
   return (
-    <div>ChooseHero</div>
+    <>
+    {Companyname === '' ? <CompanyHeors /> : <LIstHeros />}
+    </>
   )
 }
 

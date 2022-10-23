@@ -48,7 +48,7 @@ function Home() {
     </footer> */}
   </section>
      </Link>
-     <Link to="/pickmovie" className='relative w-3/12'>
+     <Link to="/choosehero" className='relative w-3/12'>
       <section
     className="absolute top-1/2 left-1/2 h-96 w-80 -translate-x-1/2 -translate-y-1/2 rotate-3 transform rounded-2xl bg-gray-400"
   ></section>
