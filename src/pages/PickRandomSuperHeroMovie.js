@@ -21,10 +21,12 @@ function PickRandomSuperHeroMovie() {
   useEffect(() => {
     setTimeout(() => setLoading(false), 1500);
   }, []);
-
+  const refreshRandom = ()=>{
+    getMovies(SearchApi + Heros.marvel[Math.floor(Math.random() * 12)].name)
+  }
   return (
     <div>
-      {loading ? <Loading /> : <RandomMovie movieData={hero} />}
+      {loading ? <Loading /> : <RandomMovie refreshRandom={refreshRandom} movieData={hero} />}
     </div>
   );
 }

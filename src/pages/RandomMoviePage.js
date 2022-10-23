@@ -14,8 +14,8 @@ function RandomMoviePage() {
   async function getMovies(url) {
     const res = await fetch(url);
     const data = await res.json();
-    setHero(data.results[Math.floor(Math.random() * 3)]);
-    console.log(data.results[Math.floor(Math.random() * 3)]);
+    setHero(data.results[Math.floor(Math.random() * (data.results.length - 2))]);
+    console.log(data.results[Math.floor(Math.random() * (data.results.length - 2))]);
   }
   useEffect(() => {
     getMovies(SearchApi + HeroName)
@@ -24,9 +24,13 @@ function RandomMoviePage() {
   useEffect(() => {
     setTimeout(() => setLoading(false), 1500);
   }, []);
+
+  const refreshRandom = ()=>{
+    getMovies(SearchApi + HeroName)
+  }
   return (
     <div>
-      {loading ? <Loading /> : <RandomMovie movieData={hero} />}
+      {loading ? <Loading /> : <RandomMovie refreshRandom={refreshRandom} movieData={hero} />}
     </div>
   )
 }

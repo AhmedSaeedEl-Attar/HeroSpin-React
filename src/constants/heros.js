@@ -63,11 +63,7 @@ import MarvelImgs from "../assets/marvel/imgs";
       name: "wolverine",
       img: MarvelImgs.Wolvarene,
     },
-    {
-      id: 13,
-      name: "WandaVision",
-      img: MarvelImgs.Wanda,
-    },
+  
   ],
   dc: [
     {

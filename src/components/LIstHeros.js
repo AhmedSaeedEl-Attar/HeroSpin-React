@@ -9,7 +9,7 @@ function LIstHeros() {
   const dispatch =  useDispatch()
   const  Companyname = useSelector((state) => state.companyName.name);
   return (
-    <div className="overflow-y-scroll h-full w-full">
+    <div className="h-full w-full">
       <div className="container mx-auto py-16 px-12 flex justify-center items-center flex-wrap gap-16 ">
      {
         Heros[Companyname].map(hero =>{
