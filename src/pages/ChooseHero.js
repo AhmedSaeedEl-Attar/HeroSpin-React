@@ -8,7 +8,7 @@ function ChooseHero() {
   const  Companyname = useSelector((state) => state.companyName.name);
   const [loading , setLoading] = useState(true)
   useEffect(()=>{
-    setTimeout(()=> setLoading(false) , 1500)
+    setTimeout(()=> setLoading(false) , 1000)
   } , [])
   
   return (

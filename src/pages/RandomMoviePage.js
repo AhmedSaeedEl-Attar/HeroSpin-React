@@ -22,7 +22,7 @@ function RandomMoviePage() {
   },[HeroName]);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1500);
+    setTimeout(() => setLoading(false), 1000);
   }, []);
 
   const refreshRandom = ()=>{

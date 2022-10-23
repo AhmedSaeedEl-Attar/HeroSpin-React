@@ -6,7 +6,7 @@ import Loading from '../components/Loading';
 function TrendignMovies() {
   const [loading , setLoading] = useState(true)
   useEffect(()=>{
-    setTimeout(()=> setLoading(false) , 1500)
+    setTimeout(()=> setLoading(false) , 1000)
   } , [])
   return (
     <div className="">
