@@ -8,6 +8,7 @@ import PickRandomSuperHeroMovie from "./pages/PickRandomSuperHeroMovie";
 import ChooseHero from "./pages/ChooseHero";
 import NoPage from "./pages/NoPage";
 import RandomMoviePage from "./pages/RandomMoviePage";
+import TrendignMovies from "./pages/TrendignMovies";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="pickmovie" element={<PickRandomSuperHeroMovie />} />
           <Route path="choosehero" element={<ChooseHero />} />
           <Route path="moviedetails" element={<RandomMoviePage />} />
+          <Route path="trendingmovies" element={<TrendignMovies />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

@@ -1,11 +1,10 @@
 import React from "react";
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import {updateCompanyName} from '../store/features/CompanyNameSlice'
 
 
 
 function CompanyHeors() {
-  const  Companyname = useSelector((state) => state.companyName.name)
   const dispatch = useDispatch()
   return (
     <div  className="relative w-screen h-screen flex justify-center items-center overflow-hidden ">

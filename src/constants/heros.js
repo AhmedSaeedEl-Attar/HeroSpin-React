@@ -15,7 +15,7 @@ import MarvelImgs from "../assets/marvel/imgs";
     },
     {
       id: 3,
-      name: "Black Bancer",
+      name: "Black Panther",
       img: MarvelImgs.BlackBancer,
     },
     {
@@ -30,7 +30,7 @@ import MarvelImgs from "../assets/marvel/imgs";
     },
     {
       id: 6,
-      name: "Daredevi",
+      name: "daredevil",
       img: MarvelImgs.DareDevi,
     },
     {
@@ -50,7 +50,7 @@ import MarvelImgs from "../assets/marvel/imgs";
     },
     {
       id: 10,
-      name: "Luke Cage",
+      name: "Luke",
       img: MarvelImgs.LukeCage,
     },
     {
@@ -60,24 +60,24 @@ import MarvelImgs from "../assets/marvel/imgs";
     },
     {
       id: 12,
-      name: "Wanda",
-      img: MarvelImgs.Wanda,
+      name: "wolverine",
+      img: MarvelImgs.Wolvarene,
     },
     {
       id: 13,
-      name: "Wolvarene",
-      img: MarvelImgs.Wolvarene,
+      name: "WandaVision",
+      img: MarvelImgs.Wanda,
     },
   ],
   dc: [
     {
       id: 1,
-      name: "Alan Scoot",
+      name: "Alan ",
       img: DcImgs.AlanScoot,
     },
     {
       id: 2,
-      name: "Aqua Man",
+      name: "Aquaman",
       img: DcImgs.AquaMan,
     },
     {
@@ -107,12 +107,12 @@ import MarvelImgs from "../assets/marvel/imgs";
     },
     {
       id: 8,
-      name: "Qreen",
+      name: "Green Lantern",
       img: DcImgs.Qreen,
     },
     {
       id: 9,
-      name: "Super Man",
+      name: "Superman",
       img: DcImgs.SuperMan,
     },
     {

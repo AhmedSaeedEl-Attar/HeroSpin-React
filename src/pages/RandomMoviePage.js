@@ -1,8 +1,33 @@
-import React from 'react'
+import React , {useState , useEffect} from 'react'
+import { useSelector } from 'react-redux'
+import RandomMovie from '../components/RandomMovie'
+import { SearchApi } from "../constants/api";
+import Loading from '../components/Loading';
+
 
 function RandomMoviePage() {
+  const [loading, setLoading] = useState(true);
+
+  const HeroName = useSelector((state) => state.HeroName.name)
+  const [hero , setHero] = useState(null)
+  
+  async function getMovies(url) {
+    const res = await fetch(url);
+    const data = await res.json();
+    setHero(data.results[Math.floor(Math.random() * 3)]);
+    console.log(data.results[Math.floor(Math.random() * 3)]);
+  }
+  useEffect(() => {
+    getMovies(SearchApi + HeroName)
+  },[HeroName]);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1500);
+  }, []);
   return (
-    <div>RandomMoviePage</div>
+    <div>
+      {loading ? <Loading /> : <RandomMovie movieData={hero} />}
+    </div>
   )
 }
 
