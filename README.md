@@ -46,11 +46,11 @@ HeroSpin/
     index.html
     favicon.ico
   src/
-    assets/
-       Dc/imgs
-       marvel/imgs
-     components/
-        movielist/
+   --assets/
+       -Dc/imgs
+       -marvel/imgs
+   --components/
+        -movielist/
             Movie.js
             sytle.css
             MovieList.js
@@ -58,10 +58,10 @@ HeroSpin/
          ListHero.js
          Loading.js
          RandomMoive.js
-       constants/
+    --constants/
          api.js
          heros.js
-       pages/
+    --pages/
          Layout.js
          Home.js
          NoPage.js
@@ -69,8 +69,8 @@ HeroSpin/
          PickRandomSuperHeroMovie.js
          RandomMoivePage.js
          TrendingMovie.js
-        store/
-          features/
+      --store/
+          -features/
               CompanyNameSlcie.js
               HeroNameSlice.js
            store.js
