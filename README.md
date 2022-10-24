@@ -35,6 +35,14 @@ To Visit App:
 
 `localhost:3000`  
 
+### Show Project Video
+
+https://www.youtube.com/watch?v=mONsLtT5iXM
+
+### Project url
+
+https://herospinapp.netlify.app/
+
 ## App Structure
 
 ```
